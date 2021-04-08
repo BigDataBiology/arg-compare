@@ -60,6 +60,21 @@ def run_rgi(faa):
         shutil.copy(tmp_oname + '.txt', oname)
     return oname
 
+@TaskGenerator
+def run_abricate(fna):
+    import subprocess
+    from os import makedirs
+    makedirs('partials.abricate', exist_ok=True)
+    oname = fna.replace('partials', 'partials.abricate').replace('fna.gz', 'abricate.tsv')
+    with open(oname, 'wb') as out:
+        subprocess.check_call([
+            'abricate',
+            '--db', 'resfinder',
+            fna],
+            stdout=out)
+    return oname
+
+
 
 @TaskGenerator
 def concat_partials(partials, oname):
@@ -77,5 +92,5 @@ for faa in (bvalue(splits_faa)):
 concat_partials(partials, 'outputs/rgi.full.tsv.gz')
 
 splits_fna = split_seq_file('data/GMGC10.wastewater.95nr.test_10k.fna.gz')
-
-
+for fa in bvalue(splits_fna):
+    run_abricate(fa)
