@@ -61,15 +61,15 @@ def run_rgi(faa):
     return oname
 
 @TaskGenerator
-def run_abricate(fna):
+def run_abricate(fna, db):
     import subprocess
     from os import makedirs
     makedirs('partials.abricate', exist_ok=True)
-    oname = fna.replace('partials', 'partials.abricate').replace('fna.gz', 'abricate.tsv')
+    oname = fna.replace('partials', 'partials.abricate').replace('fna.gz', f'abricate.{db}.tsv')
     with open(oname, 'wb') as out:
         subprocess.check_call([
             'abricate',
-            '--db', 'resfinder',
+            '--db', db,
             fna],
             stdout=out)
     return oname
@@ -93,4 +93,5 @@ concat_partials(partials, 'outputs/rgi.full.tsv.gz')
 
 splits_fna = split_seq_file('data/GMGC10.wastewater.95nr.test_10k.fna.gz')
 for fa in bvalue(splits_fna):
-    run_abricate(fa)
+    for db in ['resfinder', 'card','argannot','ncbi','megares']:
+        run_abricate(fa, db)
