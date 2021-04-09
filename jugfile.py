@@ -75,6 +75,27 @@ def run_abricate(fna, db):
     return oname
 
 
+@TaskGenerator
+def run_deeparg(fna):
+    import subprocess
+    from os import makedirs
+    makedirs('partials.deeparg', exist_ok=True)
+    oname = fna.replace('partials', 'partials.deeparg').replace('fna.gz', 'deeparg.tsv')
+
+    subprocess.check_call([
+        'conda', 'run', '-n', 'deeparg_env',
+        'deeparg', 'predict',
+        '--model', 'LS',
+        '-i', fna,
+        '-o', oname,
+        '-d', './deeparg_data',
+        '--type', 'nucl',
+        '--min-prob', '0.8',
+        '--arg-alignment-identity', '30',
+        '--arg-alignment-evalue', '1e-10',
+        '--arg-num-alignments-per-entry', '1000'])
+    return oname
+
 
 @TaskGenerator
 def concat_partials(partials, oname):
@@ -95,3 +116,4 @@ splits_fna = split_seq_file('data/GMGC10.wastewater.95nr.test_10k.fna.gz')
 for fa in bvalue(splits_fna):
     for db in ['resfinder', 'card','argannot','ncbi','megares']:
         run_abricate(fa, db)
+    run_deeparg(fa)
