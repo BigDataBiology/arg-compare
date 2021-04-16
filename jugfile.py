@@ -1,6 +1,7 @@
 from jug import TaskGenerator, bvalue
 from jug.utils import jug_execute
 import itertools
+import subprocess
 
 MAX_SEQ_CHUNKS = 1000
 
@@ -106,10 +107,36 @@ def concat_partials(partials, oname):
     return oname
 
 
+
+
+@TaskGenerator
+def run_rgi_hamronize(run_rgi_input, rgi_output):
+    import subprocess
+    rgi_software_version = subprocess.check_output(
+            ['conda', 'run', '-n', 'arg-compare',
+                'rgi', 'main', '--version']).decode('utf-8').strip()
+    rgi_db_version = subprocess.check_output(
+            ['conda', 'run', '-n', 'arg-compare',
+                'rgi', 'database', '--version']).decode('utf-8').strip()
+
+    oname = rgi_output+'.hamronized'
+    with open(oname, 'wb') as out:
+        subprocess.check_call([
+            'conda', 'run', '-n', 'hamronization',
+            'hamronize', 'rgi',
+            '--input_file_name', run_rgi_input,
+            '--analysis_software_version', rgi_software_version,
+            '--reference_database_version', rgi_db_version,
+            rgi_output],
+            stdout=out)
+    return oname
+
+
 splits_faa = split_seq_file('data/GMGC10.wastewater.95nr.test_10k.faa.gz')
 partials = []
 for faa in (bvalue(splits_faa)):
-    partials.append(run_rgi(faa))
+    partials.append(
+            run_rgi_hamronize(faa, run_rgi(faa)))
 concat_partials(partials, 'outputs/rgi.full.tsv.gz')
 
 splits_fna = split_seq_file('data/GMGC10.wastewater.95nr.test_10k.fna.gz')
