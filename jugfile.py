@@ -132,6 +132,32 @@ def run_rgi_hamronize(run_rgi_input, rgi_output):
     return oname
 
 
+
+@TaskGenerator
+def run_abricate_hamronize(abricate_output):
+    import subprocess
+    abricate_software_version = subprocess.check_output(
+        ['conda', 'run', '-n', 'arg-compare',
+            'abricate', '--version']).decode('utf-8').strip()
+    for line in subprocess.check_output(
+        ['conda', 'run', '-n', 'arg-compare',
+            'abricate', '--list']).decode('utf-8').split('\n'):
+                tokens = line.split('\t')
+                if tokens[0] == 'ncbi':
+                    abricate_db_version = tokens[-1]
+
+    oname = abricate_output+'.hamronized'
+    with open(oname, 'wb') as out:
+        subprocess.check_call([
+            'conda', 'run', '-n', 'hamronization',
+            'hamronize', 'abricate',
+            abricate_output,
+            '--analysis_software_version', abricate_software_version,
+            '--reference_database_version', abricate_db_version],
+            stdout=out)
+    return oname
+
+
 splits_faa = split_seq_file('data/GMGC10.wastewater.95nr.test_10k.faa.gz')
 partials = []
 for faa in (bvalue(splits_faa)):
@@ -142,5 +168,7 @@ concat_partials(partials, 'outputs/rgi.full.tsv.gz')
 splits_fna = split_seq_file('data/GMGC10.wastewater.95nr.test_10k.fna.gz')
 for fa in bvalue(splits_fna):
     for db in ['resfinder', 'card','argannot','ncbi','megares']:
-        run_abricate(fa, db)
+        run_abricate_hamronize(run_abricate(fa, db))
+
+
     run_deeparg(fa)
