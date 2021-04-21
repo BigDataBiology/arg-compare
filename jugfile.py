@@ -157,6 +157,23 @@ def run_abricate_hamronize(abricate_output):
             stdout=out)
     return oname
 
+@TaskGenerator
+def run_deeparg_hamronize(deeparg_input, deeparg_output):
+    import subprocess
+    deeparg_software_version = 'v2'
+    deeparg_db_version = 'v2'
+    oname = deeparg_output+'.hamronized'
+    with open(oname, 'wb') as out:
+        subprocess.check_call([
+            'conda', 'run', '-n', 'hamronization',
+            'hamronize', 'deeparg',
+            '--input_file_name', deeparg_input,
+            '--analysis_software_version', deeparg_software_version,
+            '--reference_database_version', deeparg_db_version,
+            deeparg_output],
+            stdout=out)
+    return oname
+
 
 splits_faa = split_seq_file('data/GMGC10.wastewater.95nr.test_10k.faa.gz')
 partials = []
@@ -171,4 +188,4 @@ for fa in bvalue(splits_fna):
         run_abricate_hamronize(run_abricate(fa, db))
 
 
-    run_deeparg(fa)
+    run_deeparg_hamronize(run_deeparg(fa))
