@@ -190,7 +190,7 @@ for fa in bvalue(splits_fna):
 
     run_deeparg_hamronize(fa, run_deeparg(fa))
 
-
+@TaskGenerator
 def run_hamronize_summarize(reports, combined):
     '''Combine outputs of all the tools
 
