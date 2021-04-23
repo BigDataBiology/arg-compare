@@ -189,3 +189,31 @@ for fa in bvalue(splits_fna):
 
 
     run_deeparg_hamronize(fa, run_deeparg(fa))
+
+
+def run_hamronize_summarize(reports, combined):
+    '''Combine outputs of all the tools
+
+    Parameters
+    ----------
+    reports : list of str
+       List of file paths, each being the result of a hamronize operation
+
+    combined : str
+        Output path for combined report
+
+    Returns
+    -------
+    combined : str
+        Returns the combined path (for convenience)
+    '''
+    subprocess.check_call([
+        'conda', 'run', '-n', 'hamronization',
+        'hamronize', 'summarize',
+        '-o', combined,
+        '-t', 'tsv',
+        ] + reports)
+    return combined
+
+run_hamronize_summarize(reports, 'summary.tsv')
+
