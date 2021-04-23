@@ -170,7 +170,7 @@ def run_deeparg_hamronize(deeparg_input, deeparg_output):
             '--input_file_name', deeparg_input,
             '--analysis_software_version', deeparg_software_version,
             '--reference_database_version', deeparg_db_version,
-            deeparg_output],
+            deeparg_output + '.mapping.ARG'],
             stdout=out)
     return oname
 
@@ -188,4 +188,4 @@ for fa in bvalue(splits_fna):
         run_abricate_hamronize(run_abricate(fa, db))
 
 
-    run_deeparg_hamronize(run_deeparg(fa))
+    run_deeparg_hamronize(fa, run_deeparg(fa))
