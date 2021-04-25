@@ -1,4 +1,6 @@
 jugfile.jugdata
-partials/
-partials.rgi
 __pycache__
+partials/
+partials.rgi/
+partials.abricate/
+partials.deeparg/
