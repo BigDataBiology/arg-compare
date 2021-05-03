@@ -160,8 +160,9 @@ def run_abricate_hamronize(abricate_output):
 @TaskGenerator
 def run_deeparg_hamronize(deeparg_input, deeparg_output):
     import subprocess
-    deeparg_software_version = 'v2'
-    deeparg_db_version = 'v2'
+    #no command for the database or software version, but it's registered on the bitbucket rep
+    deeparg_software_version = '1.0.2'
+    deeparg_db_version = 'v2' #corresponds to ARGminer-v1.1.0 A
     oname = deeparg_output+'.hamronized'
     with open(oname, 'wb') as out:
         subprocess.check_call([
