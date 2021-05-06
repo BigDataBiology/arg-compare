@@ -9,6 +9,6 @@ sub-directory.
 
 The `envs/` subdirectory includes conda environment files.
 
-- `arg-compare.env.yml`: main environment
-- `rgi.env.yml`: RGI environment (cannot be installed in main env – as of 11
-  Sep 2020 — because of Python version differences)
+- `arg-compare.yml`: main environment, includes Jug & RGI
+- `deeparg_env.yml`: deepARG (requires a different version of Python)
+- `hamronization.yml`: hAMRonization
