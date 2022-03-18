@@ -1,0 +1,344 @@
+	confers_resistance_to_antibiotic
+ARO:3000616	erythromycin;telithromycin
+ARO:3002546	tobramycin;plazomicin
+ARO:3002603	spectinomycin;streptomycin
+ARO:3002988	bacitracin B;bacitracin A;bacitracin F
+ARO:3004357	chloramphenicol
+ARO:3000866	oleandomycin
+ARO:3000900	amoxicillin;amoxicillin-clavulanic acid
+ARO:3000860	gentamicin B;G418;sisomicin;netilmicin;gentamicin C;dibekacin;tobramycin;amikacin;arbekacin;isepamicin;kanamycin A
+ARO:3002987	bacitracin B;bacitracin A;bacitracin F
+ARO:3002698	chloramphenicol
+ARO:3002819	quinupristin;erythromycin
+ARO:3000173	tetracycline
+ARO:3002863	trimethoprim
+ARO:3002914	teicoplanin
+ARO:3002618	spectinomycin;streptomycin
+ARO:3003006	acriflavine
+ARO:3003952	microcin J25
+ARO:3002662	plazomicin
+ARO:3000448	ciprofloxacin;norfloxacin
+ARO:3002895	streptothricin
+ARO:3002609	spectinomycin;streptomycin
+ARO:3003955	isoniazid;rifampin
+ARO:3002628	streptomycin
+ARO:3004454	chloramphenicol
+ARO:3000391	ciprofloxacin;acriflavine;norfloxacin
+ARO:3002635	plazomicin
+ARO:3000197	chlortetracycline;tetracycline;oxytetracycline;demeclocycline;doxycycline;minocycline
+ARO:3002893	tetracycline
+ARO:3004457	chloramphenicol
+ARO:3002678	thiamphenicol;chloramphenicol;azidamfenicol
+ARO:3002626	streptomycin
+ARO:3000196	chlortetracycline;tetracycline;oxytetracycline;demeclocycline;doxycycline;minocycline
+ARO:3001396	piperacillin;amoxicillin;piperacillin-tazobactam;cefalotin
+ARO:3000862	gentamicin B;G418;sisomicin;netilmicin;gentamicin C;dibekacin;tobramycin;amikacin;arbekacin;isepamicin;kanamycin A
+ARO:3003551	acriflavine
+ARO:3002674	thiamphenicol;chloramphenicol;azidamfenicol
+ARO:3002612	spectinomycin;streptomycin
+ARO:3002683	thiamphenicol;chloramphenicol;azidamfenicol
+ARO:3004456	chloramphenicol
+ARO:3000462	tylosin;azithromycin;methymycin;erythromycin
+ARO:3004455	chloramphenicol
+ARO:3002600	tobramycin;gentamicin C;kanamycin A
+ARO:3004470	tetracycline;chloramphenicol;linezolid;florfenicol;doxycycline
+ARO:3000481	tetracycline
+ARO:3001782	temocillin
+ARO:3002523	gentamicin B;tobramycin;gentamicin C;amikacin;arbekacin
+ARO:3003748	oleandomycin
+ARO:3002701	chloramphenicol
+ARO:3002500	ceftazidime
+ARO:3000449	fosfomycin
+ARO:3002537	kanamycin A
+ARO:3000186	chlortetracycline;tetracycline;oxytetracycline;demeclocycline;doxycycline;minocycline
+ARO:3003730	mupirocin
+ARO:3004146	florfenicol;chloramphenicol
+ARO:3002691	chloramphenicol
+ARO:3002690	chloramphenicol
+ARO:3002854	trimethoprim
+ARO:3004458	chloramphenicol
+ARO:3000572	tetracycline
+ARO:3000865	tylosin;erythromycin
+ARO:3004105	ceftazidime
+ARO:3001612	BAL30072
+ARO:3003562	amoxicillin
+ARO:3002649	ribostamycin;paromomycin
+ARO:3002535	neomycin;butirosin;paromomycin;kanamycin A
+ARO:3002534	gentamicin B;amikacin;gentamicin C
+ARO:3001329	fosfomycin
+ARO:3000589	imipenem;meropenem;amoxicillin-clavulanic acid;ertapenem
+ARO:3002652	gentamicin B;ribostamycin;paromomycin;amikacin;isepamicin;butirosin;kanamycin A
+ARO:3002861	trimethoprim
+ARO:3000168	tetracycline
+ARO:3004122	cefotaxime;cefoxitin
+ARO:3000392	clindamycin;patricin B;pristinamycin IA;oleandomycin;griseoviridin;telithromycin;vernamycin C;ostreogrycin B3;lincomycin;tylosin;roxithromycin;erythromycin;azithromycin;pristinamycin IB;virginiamycin S2;madumycin II;patricin A;dirithromycin;clarithromycin;quinupristin;pristinamycin IIA;dalfopristin;vernamycin B-gamma;spiramycin
+ARO:3002815	tiamulin;madumycin II;clindamycin;lincomycin;thiamphenicol;chloramphenicol;pristinamycin IIA;dalfopristin;azidamfenicol;griseoviridin
+ARO:3003111	pleuromutilin;clindamycin
+ARO:3002699	chloramphenicol
+ARO:3002540	gentamicin B;gentamicin C
+ARO:3000495	clindamycin;patricin B;pristinamycin IA;oleandomycin;griseoviridin;telithromycin;vernamycin C;ostreogrycin B3;lincomycin;tylosin;roxithromycin;erythromycin;azithromycin;pristinamycin IB;virginiamycin S2;madumycin II;patricin A;dirithromycin;clarithromycin;quinupristin;pristinamycin IIA;dalfopristin;vernamycin B-gamma;spiramycin
+ARO:3002651	ribostamycin;paromomycin
+ARO:3000858	gentamicin B;G418;sisomicin;netilmicin;gentamicin C;dibekacin;tobramycin;amikacin;arbekacin;isepamicin;kanamycin A
+ARO:3002604	spectinomycin;streptomycin
+ARO:3003733	fusidic acid
+ARO:3002860	trimethoprim
+ARO:3003950	metronidazole
+ARO:3002602	spectinomycin;streptomycin
+ARO:3000604	clindamycin;patricin B;pristinamycin IA;oleandomycin;griseoviridin;telithromycin;vernamycin C;ostreogrycin B3;lincomycin;tylosin;roxithromycin;erythromycin;azithromycin;pristinamycin IB;virginiamycin S2;madumycin II;patricin A;dirithromycin;clarithromycin;quinupristin;pristinamycin IIA;dalfopristin;vernamycin B-gamma;spiramycin
+ARO:3002639	streptomycin
+ARO:3000181	tetracycline
+ARO:3003992	rifapentine;rifabutin;rifaximin;rifampin
+ARO:3003918	apramycin
+ARO:3002611	spectinomycin;streptomycin
+ARO:3004441	chlortetracycline;tetracycline;oxytetracycline
+ARO:3002616	spectinomycin;streptomycin
+ARO:3002053	cefoxitin;ceftazidime
+ARO:3002529	gentamicin B;astromicin;sisomicin;gentamicin C
+ARO:3003110	thiamphenicol;chloramphenicol;azidamfenicol
+ARO:3000412	sulfamethizole;sulfadimidine;sulfadiazine;sulfamethoxazole;sulfacetamide;sulfadoxine;sulfasalazine;mafenide;sulfisoxazole
+ARO:3002544	kanamycin A
+ARO:3002531	gentamicin B;sisomicin;gentamicin C
+ARO:3001214	lincomycin;chloramphenicol;acriflavine;puromycin;norfloxacin
+ARO:3000861	gentamicin B;G418;sisomicin;netilmicin;gentamicin C;dibekacin;tobramycin;amikacin;arbekacin;isepamicin;kanamycin A
+ARO:3000423	fosfomycin
+ARO:3001866	ceftazidime;ceftriaxone;cefalotin
+ARO:3000149	fosfomycin
+ARO:3002630	spectinomycin
+ARO:3003197	spectinomycin;streptomycin
+ARO:3000859	gentamicin B;G418;sisomicin;netilmicin;gentamicin C;dibekacin;tobramycin;amikacin;arbekacin;isepamicin;kanamycin A
+ARO:3000177	tetracycline
+ARO:3000413	sulfamethizole;sulfadimidine;sulfadiazine;sulfamethoxazole;sulfacetamide;sulfadoxine;sulfasalazine;mafenide;sulfisoxazole
+ARO:3001328	benzalkonium chloride;tetracycline;rhodamine
+ARO:3002606	spectinomycin;streptomycin
+ARO:3000594	clindamycin;patricin B;pristinamycin IA;oleandomycin;griseoviridin;telithromycin;vernamycin C;ostreogrycin B3;lincomycin;tylosin;roxithromycin;erythromycin;azithromycin;pristinamycin IB;virginiamycin S2;madumycin II;patricin A;dirithromycin;clarithromycin;quinupristin;pristinamycin IIA;dalfopristin;vernamycin B-gamma;spiramycin
+ARO:3002679	thiamphenicol;chloramphenicol;azidamfenicol
+ARO:3003109	erythromycin
+ARO:3001878	ceftazidime;ceftriaxone;cefalotin
+ARO:3002675	thiamphenicol;chloramphenicol;azidamfenicol
+ARO:3000999	penicillin
+ARO:3004460	chloramphenicol
+ARO:3000567	tetracycline
+ARO:3002672	thiamphenicol;chloramphenicol;azidamfenicol
+ARO:3002629	streptomycin
+ARO:3002601	spectinomycin;streptomycin
+ARO:3002556	plazomicin
+ARO:3000599	clindamycin;patricin B;pristinamycin IA;oleandomycin;griseoviridin;telithromycin;vernamycin C;ostreogrycin B3;lincomycin;tylosin;roxithromycin;erythromycin;azithromycin;pristinamycin IB;virginiamycin S2;madumycin II;patricin A;dirithromycin;clarithromycin;quinupristin;pristinamycin IIA;dalfopristin;vernamycin B-gamma;spiramycin
+ARO:3004077	neomycin
+ARO:3002704	florfenicol;chloramphenicol
+ARO:3001889	ceftazidime;cefalotin
+ARO:3002816	tiamulin;madumycin II;clindamycin;lincomycin;thiamphenicol;chloramphenicol;pristinamycin IIA;dalfopristin;azidamfenicol;griseoviridin
+ARO:3000601	clindamycin;patricin B;pristinamycin IA;oleandomycin;griseoviridin;telithromycin;vernamycin C;ostreogrycin B3;lincomycin;tylosin;roxithromycin;erythromycin;azithromycin;pristinamycin IB;virginiamycin S2;madumycin II;patricin A;dirithromycin;clarithromycin;quinupristin;pristinamycin IIA;dalfopristin;vernamycin B-gamma;spiramycin
+ARO:3002700	chloramphenicol
+ARO:3004123	imipenem;cefoxitin;ceftazidime;benzylpenicillin
+ARO:3003036	oleandomycin
+ARO:3002543	neomycin
+ARO:3002671	thiamphenicol;chloramphenicol;azidamfenicol
+ARO:3002528	gentamicin B;plazomicin;sisomicin;gentamicin C
+ARO:3000753	ciprofloxacin;ofloxacin;acriflavine;norfloxacin
+ARO:3002013	cephamycin;cefoxitin;ceftazidime
+ARO:3002655	plazomicin
+ARO:3000467	piperacillin-tazobactam;cefoxitin;ceftazidime;ertapenem
+ARO:3002509	ceftazidime
+ARO:3000421	ciprofloxacin;moxifloxacin;sparfloxacin;norfloxacin
+ARO:3000361	roxithromycin;clarithromycin;erythromycin
+ARO:3003731	fusidic acid
+ARO:3002812	florfenicol;chloramphenicol
+ARO:3003796	piperacillin;cefepime
+ARO:3002641	lividomycin A;ribostamycin;paromomycin;lividomycin B;kanamycin A
+ARO:3003964	ciprofloxacin;metronidazole;tetracycline
+ARO:3002646	gentamicin B;ribostamycin;paromomycin;butirosin;kanamycin A
+ARO:3000498	clindamycin;patricin B;pristinamycin IA;oleandomycin;griseoviridin;telithromycin;vernamycin C;ostreogrycin B3;lincomycin;tylosin;roxithromycin;erythromycin;azithromycin;pristinamycin IB;virginiamycin S2;madumycin II;patricin A;dirithromycin;clarithromycin;quinupristin;pristinamycin IIA;dalfopristin;vernamycin B-gamma;spiramycin
+ARO:3002647	gentamicin B;lividomycin A;ribostamycin;paromomycin;lividomycin B;butirosin;plazomicin;kanamycin A
+ARO:3004113	fosfomycin
+ARO:3003250	bacitracin B;bacitracin A;bacitracin F
+ARO:3000522	clindamycin;patricin B;pristinamycin IA;oleandomycin;griseoviridin;telithromycin;vernamycin C;ostreogrycin B3;lincomycin;tylosin;roxithromycin;erythromycin;azithromycin;pristinamycin IB;virginiamycin S2;madumycin II;patricin A;dirithromycin;clarithromycin;quinupristin;pristinamycin IIA;dalfopristin;vernamycin B-gamma;spiramycin
+ARO:3000501	rifapentine;rifabutin;rifaximin;rifampin
+ARO:3003801	bicyclomycin
+ARO:3004452	chloramphenicol
+ARO:3000191	chlortetracycline;tetracycline;oxytetracycline;demeclocycline;doxycycline;minocycline
+ARO:3000182	tetracycline
+ARO:3002826	erythromycin
+ARO:3002657	plazomicin
+ARO:3000194	chlortetracycline;tetracycline;oxytetracycline;demeclocycline;doxycycline;minocycline
+ARO:3002859	trimethoprim
+ARO:3002892	tetracycline
+ARO:3002682	thiamphenicol;chloramphenicol;azidamfenicol
+ARO:3004039	erythromycin
+ARO:3000343	tetracycline
+ARO:3003980	tetracycline
+ARO:3002615	spectinomycin;streptomycin
+ARO:3003749	lincomycin;pleuromutilin
+ARO:3000556	chlortetracycline;tetracycline;oxytetracycline;demeclocycline;doxycycline;minocycline
+ARO:3004185	methicillin
+ARO:3002687	thiamphenicol;chloramphenicol;azidamfenicol
+ARO:3002527	gentamicin B;tobramycin;gentamicin C;amikacin;arbekacin
+ARO:3000596	clindamycin;patricin B;pristinamycin IA;oleandomycin;griseoviridin;telithromycin;vernamycin C;ostreogrycin B3;lincomycin;tylosin;roxithromycin;erythromycin;azithromycin;pristinamycin IB;virginiamycin S2;madumycin II;patricin A;dirithromycin;clarithromycin;quinupristin;pristinamycin IIA;dalfopristin;vernamycin B-gamma;spiramycin
+ARO:3000245	rifapentine;rifabutin;rifaximin;rifampin
+ARO:3002547	ciprofloxacin;tobramycin;plazomicin
+ARO:3000410	sulfamethizole;sulfadimidine;sulfadiazine;sulfamethoxazole;sulfacetamide;sulfadoxine;sulfasalazine;mafenide;sulfisoxazole
+ARO:3002642	gentamicin B;lividomycin A;ribostamycin;paromomycin;lividomycin B;kanamycin A
+ARO:3003441	tiamulin;madumycin II;clindamycin;lincomycin;thiamphenicol;chloramphenicol;pristinamycin IIA;dalfopristin;azidamfenicol;griseoviridin
+ARO:3003953	acriflavine;norfloxacin
+ARO:3000617	methicillin
+ARO:3001327	ciprofloxacin
+ARO:3002536	gentamicin B;gentamicin C
+ARO:3000444	rifapentine;rifabutin;rifaximin;rifampin
+ARO:3002522	novobiocin
+ARO:3002621	spectinomycin;streptomycin
+ARO:3002689	thiamphenicol;chloramphenicol;azidamfenicol
+ARO:3002638	plazomicin
+ARO:3000375	clindamycin;patricin B;pristinamycin IA;oleandomycin;griseoviridin;telithromycin;vernamycin C;ostreogrycin B3;lincomycin;tylosin;roxithromycin;erythromycin;azithromycin;pristinamycin IB;virginiamycin S2;madumycin II;patricin A;dirithromycin;clarithromycin;quinupristin;pristinamycin IIA;dalfopristin;vernamycin B-gamma;spiramycin
+ARO:3000175	tetracycline
+ARO:3003676	amikacin;tobramycin
+ARO:3000026	tigecycline
+ARO:3002622	spectinomycin;streptomycin
+ARO:3000180	tetracycline
+ARO:3004359	ceftazidime;cefotaxime;ticarcillin;amoxicillin;penicillin
+ARO:3004103	ciprofloxacin;moxifloxacin;norfloxacin
+ARO:3002898	streptothricin
+ARO:3000768	novobiocin;erythromycin
+ARO:3002676	thiamphenicol;chloramphenicol;azidamfenicol
+ARO:3000561	tetracycline
+ARO:3003061	viomycin
+ARO:3000592	clindamycin;patricin B;pristinamycin IA;oleandomycin;griseoviridin;telithromycin;vernamycin C;ostreogrycin B3;lincomycin;tylosin;roxithromycin;erythromycin;azithromycin;pristinamycin IB;virginiamycin S2;madumycin II;patricin A;dirithromycin;clarithromycin;quinupristin;pristinamycin IIA;dalfopristin;vernamycin B-gamma;spiramycin
+ARO:3000326	clindamycin;patricin B;pristinamycin IA;oleandomycin;griseoviridin;telithromycin;vernamycin C;ostreogrycin B3;lincomycin;tylosin;roxithromycin;erythromycin;azithromycin;pristinamycin IB;virginiamycin S2;madumycin II;patricin A;dirithromycin;clarithromycin;quinupristin;pristinamycin IIA;dalfopristin;vernamycin B-gamma;spiramycin
+ARO:3000165	tetracycline
+ARO:3000521	mupirocin
+ARO:3003835	acriflavine
+ARO:3000183	tetracycline
+ARO:3000174	tetracycline
+ARO:3000193	chlortetracycline;tetracycline;oxytetracycline;demeclocycline;doxycycline;minocycline
+ARO:3000593	clindamycin;patricin B;pristinamycin IA;oleandomycin;griseoviridin;telithromycin;vernamycin C;ostreogrycin B3;lincomycin;tylosin;roxithromycin;erythromycin;azithromycin;pristinamycin IB;virginiamycin S2;madumycin II;patricin A;dirithromycin;clarithromycin;quinupristin;pristinamycin IIA;dalfopristin;vernamycin B-gamma;spiramycin
+ARO:3002539	plazomicin;apramycin
+ARO:3002607	spectinomycin;streptomycin
+ARO:3003206	lincomycin;pleuromutilin
+ARO:3003001	cefmetazole;cefoxitin;flomoxef;cefotetan
+ARO:3000230	gentamicin B;tobramycin;gentamicin C;plazomicin;kanamycin A
+ARO:3003318	novobiocin;clorobiocin;coumermycin A1
+ARO:3001796	ampicillin;cefalotin
+ARO:3000510	mupirocin
+ARO:3000190	chlortetracycline;tetracycline;oxytetracycline;demeclocycline;doxycycline;minocycline
+ARO:3001419	BAL30072
+ARO:3002597	plazomicin
+ARO:3002614	spectinomycin;streptomycin
+ARO:3001059	ampicillin
+ARO:3004085	lincomycin
+ARO:3001784	piperacillin-tazobactam;amoxicillin-clavulanic acid
+ARO:3002814	tiamulin;madumycin II;clindamycin;lincomycin;thiamphenicol;chloramphenicol;pristinamycin IIA;dalfopristin;azidamfenicol;griseoviridin
+ARO:3003112	lincomycin;pleuromutilin;clindamycin
+ARO:3002502	ceftazidime
+ARO:3003981	tetracycline
+ARO:3003013	trimethoprim
+ARO:3000251	quinupristin;erythromycin
+ARO:3004290	penicillin
+ARO:3000172	fosfomycin
+ARO:3000595	clindamycin;patricin B;pristinamycin IA;oleandomycin;griseoviridin;telithromycin;vernamycin C;ostreogrycin B3;lincomycin;tylosin;roxithromycin;erythromycin;azithromycin;pristinamycin IB;virginiamycin S2;madumycin II;patricin A;dirithromycin;clarithromycin;quinupristin;pristinamycin IIA;dalfopristin;vernamycin B-gamma;spiramycin
+ARO:3004111	fosfomycin
+ARO:3000319	dirithromycin;clarithromycin;azithromycin;tylosin;roxithromycin;oleandomycin;erythromycin;spiramycin;telithromycin
+ARO:3000603	clindamycin;patricin B;pristinamycin IA;oleandomycin;griseoviridin;telithromycin;vernamycin C;ostreogrycin B3;lincomycin;tylosin;roxithromycin;erythromycin;azithromycin;pristinamycin IB;virginiamycin S2;madumycin II;patricin A;dirithromycin;clarithromycin;quinupristin;pristinamycin IIA;dalfopristin;vernamycin B-gamma;spiramycin
+ARO:3003773	defensin
+ARO:3000478	tetracycline
+ARO:3002660	streptomycin
+ARO:3003983	thiamphenicol;chloramphenicol;azidamfenicol
+ARO:3002533	gentamicin B;plazomicin;tobramycin;gentamicin C
+ARO:3002542	neomycin
+ARO:3003942	cefotaxime;moenomycin A1;daptomycin;methicillin
+ARO:3000179	tetracycline
+ARO:3002619	spectinomycin;streptomycin
+ARO:3003059	tunicamycin
+ARO:3000166	tetracycline
+ARO:3003986	pleuromutilin
+ARO:3001397	ampicillin;amoxicillin;meropenem;ceftazidime
+ARO:3003907	tiamulin;madumycin II;clindamycin;lincomycin;thiamphenicol;chloramphenicol;pristinamycin IIA;dalfopristin;azidamfenicol;griseoviridin
+ARO:3003772	defensin
+ARO:3000873	ampicillin;amoxicillin;cefalotin
+ARO:3000347	clindamycin;patricin B;pristinamycin IA;oleandomycin;griseoviridin;telithromycin;vernamycin C;ostreogrycin B3;lincomycin;tylosin;roxithromycin;erythromycin;azithromycin;pristinamycin IB;virginiamycin S2;madumycin II;patricin A;dirithromycin;clarithromycin;quinupristin;pristinamycin IIA;dalfopristin;vernamycin B-gamma;spiramycin
+ARO:3002705	florfenicol;chloramphenicol
+ARO:3002644	gentamicin B;ribostamycin;butirosin;paromomycin
+ARO:3002680	thiamphenicol;chloramphenicol;azidamfenicol
+ARO:3002703	chloramphenicol
+ARO:3000602	clindamycin;patricin B;pristinamycin IA;oleandomycin;griseoviridin;telithromycin;vernamycin C;ostreogrycin B3;lincomycin;tylosin;roxithromycin;erythromycin;azithromycin;pristinamycin IB;virginiamycin S2;madumycin II;patricin A;dirithromycin;clarithromycin;quinupristin;pristinamycin IIA;dalfopristin;vernamycin B-gamma;spiramycin
+ARO:3004291	benzylpenicillin
+ARO:3004289	meropenem
+ARO:3004466	colistin A;colistin B
+ARO:3000566	tetracycline
+ARO:3003687	gentamicin B;ribostamycin;paromomycin;amikacin;isepamicin;butirosin;kanamycin A
+ARO:3001313	factumycin
+ARO:3000822	ciprofloxacin;norfloxacin
+ARO:3000250	clindamycin;patricin B;pristinamycin IA;oleandomycin;griseoviridin;telithromycin;vernamycin C;ostreogrycin B3;lincomycin;tylosin;roxithromycin;erythromycin;azithromycin;pristinamycin IB;virginiamycin S2;madumycin II;patricin A;dirithromycin;clarithromycin;quinupristin;pristinamycin IIA;dalfopristin;vernamycin B-gamma;spiramycin
+ARO:3000205	chlortetracycline;tetracycline;oxytetracycline;demeclocycline;doxycycline;minocycline;tigecycline
+ARO:3000598	clindamycin;patricin B;pristinamycin IA;oleandomycin;griseoviridin;telithromycin;vernamycin C;ostreogrycin B3;lincomycin;tylosin;roxithromycin;erythromycin;azithromycin;pristinamycin IB;virginiamycin S2;madumycin II;patricin A;dirithromycin;clarithromycin;quinupristin;pristinamycin IIA;dalfopristin;vernamycin B-gamma;spiramycin
+ARO:3002620	spectinomycin;streptomycin
+ARO:3000300	dalfopristin;quinupristin;clindamycin;pleuromutilin
+ARO:3002827	lincomycin;mycinamicin;tylosin
+ARO:3000167	tetracycline
+ARO:3002524	gentamicin B;tobramycin;gentamicin C;amikacin;arbekacin
+ARO:3003982	clindamycin
+ARO:3001917	ceftazidime;ceftriaxone
+ARO:3002623	plazomicin
+ARO:3002694	chloramphenicol
+ARO:3003026	fusidic acid
+ARO:3002627	streptomycin
+ARO:3004038	gentamicin C
+ARO:3001307	vernamycin C;patricin A;patricin B;ostreogrycin B3;quinupristin;pristinamycin IA;pristinamycin IB;vernamycin B-gamma;virginiamycin S2
+ARO:3000363	roxithromycin;clarithromycin;azithromycin;erythromycin
+ARO:3002883	rifapentine;rifabutin;rifaximin;rifampin
+ARO:3003324	defensin
+ARO:3002650	ribostamycin;paromomycin
+ARO:3002696	chloramphenicol
+ARO:3002654	kanamycin A
+ARO:3002693	chloramphenicol
+ARO:3001216	enoxacin;norfloxacin
+ARO:3002894	tetracycline
+ARO:3004468	ciprofloxacin
+ARO:3002986	bacitracin B;bacitracin A;bacitracin F
+ARO:3002685	thiamphenicol;chloramphenicol;azidamfenicol
+ARO:3000192	chlortetracycline;tetracycline;oxytetracycline;demeclocycline;doxycycline;minocycline
+ARO:3002897	streptothricin
+ARO:3000569	tetracycline
+ARO:3002884	rifapentine;rifabutin;rifaximin;rifampin
+ARO:3001205	bleomycin B2;bleomycinic acid;bleomycin A2
+ARO:3002508	ceftazidime
+ARO:3002608	spectinomycin;streptomycin
+ARO:3000600	clindamycin;patricin B;pristinamycin IA;oleandomycin;griseoviridin;telithromycin;vernamycin C;ostreogrycin B3;lincomycin;tylosin;roxithromycin;erythromycin;azithromycin;pristinamycin IB;virginiamycin S2;madumycin II;patricin A;dirithromycin;clarithromycin;quinupristin;pristinamycin IIA;dalfopristin;vernamycin B-gamma;spiramycin
+ARO:3000316	dirithromycin;clarithromycin;azithromycin;roxithromycin;oleandomycin;erythromycin;telithromycin
+ARO:3003552	fusidic acid
+ARO:3002695	chloramphenicol
+ARO:3000573	tetracycline
+ARO:3002684	thiamphenicol;chloramphenicol;azidamfenicol
+ARO:3002605	spectinomycin;streptomycin
+ARO:3000178	tetracycline
+ARO:3000476	tetracycline
+ARO:3002871	tetracycline
+ARO:3002702	chloramphenicol
+ARO:3003196	tetracycline
+ARO:3003770	defensin
+ARO:3002790	ciprofloxacin
+ARO:3002881	lincomycin;celesticetin;clindamycin
+ARO:3000463	chalcomycin;oleandomycin;tylosin;methymycin
+ARO:3000198	fosfomycin
+ARO:3002525	gentamicin B;tobramycin;gentamicin C;amikacin;arbekacin
+ARO:3002613	spectinomycin;streptomycin
+ARO:3003589	ampicillin;cefoxitin;cefazolin;amoxicillin-clavulanic acid
+ARO:3000118	dalfopristin;pristinamycin IIA
+ARO:3004451	chloramphenicol
+ARO:3002686	thiamphenicol;chloramphenicol;azidamfenicol
+ARO:3004442	chlortetracycline;tetracycline;minocycline
+ARO:3002688	thiamphenicol;chloramphenicol;azidamfenicol
+ARO:3002617	spectinomycin;streptomycin
+ARO:3000565	tetracycline
+ARO:3003007	chloramphenicol;acriflavine;puromycin
+ARO:3004191	gentamicin A;sisomicin;tobramycin;dibekacin;kanamycin A
+ARO:3002631	spectinomycin
+ARO:3002648	gentamicin B;ribostamycin;paromomycin;butirosin;kanamycin A
+ARO:3002526	gentamicin B;tobramycin;gentamicin C;amikacin;arbekacin
+ARO:3002645	gentamicin B;ribostamycin;paromomycin;butirosin;kanamycin A
+ARO:3003954	erythromycin
+ARO:3003774	defensin
+ARO:3002828	spiramycin
+ARO:3003994	capreomycin
+ARO:3003990	vernamycin C;patricin A;patricin B;ostreogrycin B3;quinupristin;pristinamycin IA;pristinamycin IB;vernamycin B-gamma;virginiamycin S2
+ARO:3000195	chlortetracycline;tetracycline;oxytetracycline;demeclocycline;doxycycline;minocycline
+ARO:3002681	thiamphenicol;chloramphenicol;azidamfenicol
+ARO:3003988	kasugamycin
+ARO:3000318	dirithromycin;clarithromycin;azithromycin;tylosin;roxithromycin;oleandomycin;erythromycin;spiramycin;telithromycin
