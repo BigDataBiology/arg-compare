@@ -1,0 +1,69 @@
+import numpy as np
+import pandas as pd
+
+# download resfinder_ncbi_ARO_mapping.tsv from https://github.com/fmaguire/quick_amr_db_harmonisation
+
+aro_mapping = pd.read_csv('resfinder_ncbi_ARO_mapping.tsv', squeeze=True, sep='\t')  #index_col=0
+
+# combined hamronization outputs
+combined = pd.read_csv('computed/combined_hamronized_report.tsv.xz', squeeze=True, sep='\t')  #index_col=0
+
+# reformat ARO_mapping:
+# ARO column: 3001879.0 -> ARO:3001879
+aro_mapping['ARO'] = 'ARO:' + aro_mapping['ARO'].apply(str).str.split(".").str[0]
+
+#'Original ID' Database=resfinder  blaCTX-M-16_1_AY029068 ->  blaCTX-M-16
+gene_symbol_resfinder = aro_mapping.query("Database == 'resfinder'")['Original ID'].str.split("_", 1).str[0]
+
+#'Original ID' Database=ncbi 447055251|WP_001132507.1|1|1|acrB|acrB|mutatio... -> acrB
+gene_symbol_ncbi = aro_mapping['Original ID'].str.split("|").str[4]  #4th field
+
+# gene_symbol_resfinder + gene_symbol_ncbi = gene_symbol_short
+
+aro_mapping['gene_symbol_short'] = pd.concat(
+    [gene_symbol_resfinder.dropna(),
+     gene_symbol_ncbi.dropna()])
+
+aro_mapping.to_csv('aro_mapping1.tsv', sep='\t')
+
+combined.iloc[0]
+
+combined_aro = pd.concat(
+    [
+        combined.query("reference_database_id == 'resfinder' | reference_database_id == 'ncbi'") \
+            .join(aro_mapping.set_index('gene_symbol_short'), on='gene_symbol'),
+        combined.query("reference_database_id == 'card' | reference_database_id == 'CARD'") \
+            .join(aro_mapping.set_index('Gene Name in CARD'), on='gene_symbol'),
+                ])
+combined_aro['ARO'].isna().mean() #0.10459716940748746 ->90% mapped
+
+#analysis_software_name AND reference_database_id included:
+#deeparg.deeparg_db NOT
+#rgi.CARD
+#analysis_software_name AND reference_database_id
+#abricate.card
+#abricate.megares NOT
+#abricate.ncbi
+#abricate.argannot NOT
+#abricate.resfinder
+
+# ARO ontology: e.g. AMR Gene Family, Drug Class
+
+import pronto #for loading card .owl file (download it from https://card.mcmaster.ca/download)
+
+from pronto import Ontology
+aro = pronto.Ontology('aro.owl')
+
+# add antibiotic info
+aro = pd.read_csv("ProGenomes2.2/aro_3.1.0.tsv", squeeze=True, sep='\t')  #index_col=0
+aro2antibiotic = pd.read_csv('aro2antibiotic.tsv', sep='\t', squeeze=True, index_col=0) #progenomes data: aro2antibiotic.tsv
+
+combined_aro = combined_aro.join(aro2antibiotic, on='ARO')
+combined_aro #520951 rows
+
+#input_sequence_id  
+#gene_symbol
+#reference_database_id
+#analysis_software_name
+#ARO
+
