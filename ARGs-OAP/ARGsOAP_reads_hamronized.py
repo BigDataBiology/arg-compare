@@ -6,12 +6,16 @@ def hamronized(infile1,infile2,outfile):
     with open(infile1,"rt") as f1:
         for line in f1:
             Gene,Subtype,Type,sample1,sample2 = line.strip().split("\t")
-            gene_type[Gene] = Type
+            gene_type[Gene] = Subtype
     
     with open(infile2,"rt") as f2:
         for line in f2:
             qseqid,sseqid,pident,length,mismatch,gapopen,qstart,qend,sstart,send,evalue,bitscore = line.strip().split("\t")
-            out.write(f"{qseqid}\t\t{sseqid}\t{sseqid}\tSARG\t2.3\t{sseqid}\tARGs-OAP\t2.3\t{pident}\t\t\t{qstart}\t{qend}\t\t\t{sstart}\t{send}\t\t\t\t\t\t\t\t\t{gene_type[sseqid]}\t\t\n")
+            input_file_name = qseqid.split("_")[0]+".fq"
+            gene_symbol = gene_type[sseqid].split("__")[1]
+            drug_class = gene_type[sseqid].split("__")[0]
+            gene_name = f"{sseqid}|FEATURES|{gene_symbol}|{drug_class}|{gene_symbol}"
+            out.write(f"{qseqid}\t{input_file_name}\t{gene_symbol}\t{gene_name}\tsarg_db\t2.3\t{sseqid}\tARGs-OAP\t2.3\t{pident}\t\t\t{qstart}\t{qend}\t\t\t{sstart}\t{send}\t\t\t\t\t\t\t\t\t{drug_class}\t\t\n")
             
     out.close
                   
