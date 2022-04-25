@@ -39,6 +39,14 @@ def run_sample(data_dir, s):
                 path.join(odir, 'output.deeparg'))
     return odir
 
+@TaskGenerator
+def clean_up_deeparg_outputs(basedir):
+    from glob import glob
+    import os
+    for f in glob(basedir + '/preproc.*') + glob(basedir + '/*.bam') + [basedir + 'output.deeparg.clean']:
+        os.unlink(f)
+
+    return basedir
 
 samples = [line.strip() for line in open('data/samples.txt')]
 samples.sort()
@@ -46,5 +54,5 @@ samples.sort()
 data_dir = deeparg_get_data(DATA_DIR)
 
 for s in samples:
-   run_sample(data_dir, s)
+   clean_up_deeparg_outputs(run_sample(data_dir, s))
 
