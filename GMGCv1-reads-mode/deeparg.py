@@ -43,7 +43,7 @@ def run_sample(data_dir, s):
 def clean_up_deeparg_outputs(basedir):
     from glob import glob
     import os
-    for f in glob(basedir + '/preproc.*') + glob(basedir + '/*.bam') + [basedir + '/output.deeparg.clean']:
+    for f in glob(basedir + '/preproc.*') + glob(basedir + '/*.bam') + [basedir + '/output.deeparg.clean', basedir + '/output.deeparg.clean.sam']:
         os.unlink(f)
 
     return basedir
