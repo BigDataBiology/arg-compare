@@ -44,7 +44,8 @@ def clean_up_deeparg_outputs(basedir):
     from glob import glob
     import os
     for f in glob(basedir + '/preproc.*') + glob(basedir + '/*.bam') + [basedir + '/output.deeparg.clean', basedir + '/output.deeparg.clean.sam']:
-        os.unlink(f)
+        if os.path.exists(f):
+            os.unlink(f)
 
     return basedir
 
