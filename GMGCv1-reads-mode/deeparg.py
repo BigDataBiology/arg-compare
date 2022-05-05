@@ -1,5 +1,6 @@
 import subprocess
 from jug import TaskGenerator
+from jug.utils import identity
 
 DATA_DIR = '/scratch/coelho/deeparg_datadir/'
 
@@ -49,11 +50,29 @@ def clean_up_deeparg_outputs(basedir):
 
     return basedir
 
+
+@TaskGenerator
+def build_table(outputs):
+    import pandas as pd
+    data = {}
+    for s, basedir in outputs.items():
+        data[s] = pd.read_table(
+                    basedir + '/output.deeparg.clean.deeparg.mapping.ARG.merged.quant',
+                    names=['Symbol', 'category', 'nrReads', 'B', 'C', 'D']) \
+                            .set_index("Symbol")['nrReads']
+    data = pd.DataFrame(data).fillna(0).astype(int)
+    data.to_csv('outputs/deepARG-read-mode.tsv', sep='\t')
+    return 'outputs/deepARG-read-mode.tsv'
+
+
 samples = [line.strip() for line in open('data/samples.txt')]
 samples.sort()
 
 data_dir = deeparg_get_data(DATA_DIR)
 
+deeparg_outputs = {}
 for s in samples:
-   clean_up_deeparg_outputs(run_sample(data_dir, s))
+    deeparg_outputs[s] = clean_up_deeparg_outputs(run_sample(data_dir, s))
 
+outs = identity(deeparg_outputs)
+build_table(outs)
