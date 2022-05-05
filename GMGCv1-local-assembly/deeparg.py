@@ -4,17 +4,20 @@ from jug.utils import identity
 
 @TaskGenerator
 def run_sample(s):
-    from os import path, makedirs
+    from os import path, makedirs, stat
     odir = 'outputs/deeparg.local-assembly/'+s
+    orf_fname = 'orfs/'+s+'-assembled.mgm.fna'
     try:
         makedirs(odir)
     except:
         pass
+    if stat(orf_fname).st_size == 0:
+        return odir
     subprocess.check_call([
         'deeparg',
         'predict',
         '--model', 'LS',
-        '--input', 'orfs/'+s+'-assembled.mgm.fna',
+        '--input', orf_fname,
         '--output', odir + '/output',
         '--data-path', 'deeparg_datadir'])
     return odir
