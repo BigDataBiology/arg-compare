@@ -1,0 +1,11 @@
+ngless "1.3"
+import "mocat" version "1.0"
+
+sample = ARGV[1]
+input = load_mocat_sample('data/metagenomes/' + sample)
+preproc = preprocess(input, keep_singles=False) using |r|:
+    r = substrim(r, min_quality=25)
+    if len(r) < 45:
+        discard
+
+write(preproc, ofile='outputs' </> 'deeparg' </> sample </> 'preproc.fq.gz')

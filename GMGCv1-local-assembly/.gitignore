@@ -1,0 +1,8 @@
+.jugstatus.sqlite3
+data
+deeparg.jugdata/
+deeparg_datadir
+logs/
+orfs
+outputs/
+run-scripts/

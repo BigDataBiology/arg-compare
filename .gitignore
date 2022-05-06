@@ -4,3 +4,4 @@ partials/
 partials.rgi/
 partials.abricate/
 partials.deeparg/
+.jugstatus.sqlite3
