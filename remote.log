@@ -1,0 +1,2 @@
+81514195-3b00-4774-ab76-a9103662bb19 encryption=none exporttree=yes name=aws.big-data-biology.org rsyncurl=aws.big-data-biology.org:/share/work/arg-compare-data type=rsync timestamp=1656947450.205476252s
+b057c4d3-c81b-45ef-9881-181df36df92e encryption=none exporttree=no name=aws-data rsyncurl=aws.big-data-biology.org:/share/work/arg-compare-data type=rsync timestamp=1656951009.564510147s
