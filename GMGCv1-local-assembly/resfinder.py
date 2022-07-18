@@ -39,15 +39,40 @@ def compress_tmp(odir):
             '--threads=8',
             x])
     return odir
+@TaskGenerator
+def compress_file(f):
+    from glob import glob
+    import subprocess
+    subprocess.check_call([
+        'xz',
+        '--threads=8',
+        f])
+    return f + '.xz'
 samples = [line.strip() for line in open('data/samples.txt')]
 samples.sort()
 
 outputs = []
 for s in samples:
-    compress_tmp(run_sample(s))
-    #outputs.append(cleanup_xz(run_sample(s)))
+    outputs.append(compress_tmp(run_sample(s)))
 
-#outputs = identity(outputs)
+outputs = identity(outputs)
 
-#for fname in ['output.mapping.ARG', 'output.mapping.potential.ARG']:
-#    concatenate_outputs(outputs, fname)
+@TaskGenerator
+def concatenate_outputs(outputs):
+    import pandas as pd
+    from os import path
+    oname = 'outputs/ResFinder_results_tab.GMGCv1.tsv'
+    data = []
+    for odir in outputs:
+        s = path.split(odir)[-1]
+        tab = odir + '/ResFinder_results_tab.txt'
+        if not path.exists(tab):
+            continue
+        ch = pd.read_table(tab)
+        ch.insert(0, 'sample', s)
+        data.append(ch)
+    data = pd.concat(data)
+    data.to_csv(oname, sep='\t', index=False)
+    return oname
+
+compress_file(concatenate_outputs(outputs))
