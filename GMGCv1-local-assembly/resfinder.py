@@ -5,6 +5,7 @@ from jug.utils import identity
 @TaskGenerator
 def run_sample(s):
     from os import path, makedirs, stat
+    import tempfile
     odir = 'outputs/resfinder.local-assembly/'+s
     ifname = 'assembled/'+s+'-assembled.fna'
     try:
@@ -13,12 +14,18 @@ def run_sample(s):
         pass
     if stat(ifname).st_size == 0:
         return odir
-    subprocess.check_call([
-        'python',
-        '../resfinder/run_resfinder.py',
-        '--acquired',
-        '--inputfasta', ifname,
-        '-o', odir])
+    with tempfile.TemporaryDirectory() as tdir:
+        fafile = tdir + '/copy.fna'
+        with open(fafile, 'wb') as ofile:
+            with open(ifname, 'rb') as ifile:
+                while ch := ifile.read(1024*1024*8):
+                    ofile.write(ch)
+        subprocess.check_call([
+            'python',
+            '../resfinder/run_resfinder.py',
+            '--acquired',
+            '--inputfasta', fafile,
+            '-o', odir])
     return odir
 
 
