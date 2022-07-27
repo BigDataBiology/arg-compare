@@ -44,6 +44,23 @@ def run_sample(s):
                 ])
     return odir
 
+@TaskGenerator
+def concatenate_outputs(outputs):
+    import pandas as pd
+    from os import path
+    oname = 'outputs/ResFinder_results_tab.GMGCv1.tsv'
+    data = []
+    for s,odir in outputs.items():
+        tab = odir + '/ResFinder_results_tab.txt'
+        if not path.exists(tab):
+            continue
+        ch = pd.read_table(tab)
+        ch.insert(0, 'sample', s)
+        data.append(ch)
+    data = pd.concat(data)
+    data.to_csv(oname, sep='\t', index=False)
+    return oname
+
 samples = [line.strip() for line in open('data/samples.txt')]
 samples.sort()
 
@@ -52,4 +69,4 @@ for s in samples:
     outputs[s] = run_sample(s)
 
 outs = identity(outputs)
-#build_table(outs)
+concatenate_outputs(outs)
