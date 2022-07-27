@@ -17,18 +17,31 @@ def run_sample(s):
             'ngless',
             '--trace',
             '--threads', '1',
+            '--no-create-report',
             'preprocess-resfinder.ngl',
             s,
             tdir])
-        subprocess.check_call([
-            'python',
-            '../resfinder/run_resfinder.py',
-            '--acquired',
-            '--inputfastq',
-                path.join(tdir, 'preproc.pair.1.fq.gz'),
-                path.join(tdir, 'preproc.pair.2.fq.gz'),
-            '-o', odir
-            ])
+
+
+        if path.exists(path.join(tdir, 'preproc.pair.1.fq')):
+            subprocess.check_call([
+                'python',
+                '../resfinder/run_resfinder.py',
+                '--acquired',
+                '--inputfastq',
+                    path.join(tdir, 'preproc.pair.1.fq'),
+                    path.join(tdir, 'preproc.pair.2.fq'),
+                '-o', odir
+                ])
+        else:
+            subprocess.check_call([
+                'python',
+                '../resfinder/run_resfinder.py',
+                '--acquired',
+                '--inputfastq',
+                    path.join(tdir, 'preproc.fq'),
+                '-o', odir
+                ])
     return odir
 
 samples = [line.strip() for line in open('data/samples.txt')]
