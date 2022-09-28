@@ -3,3 +3,4 @@ run-scripts/
 *.jugdata/
 data/
 outputs/
+preprocess-resfinder.ngl.output_ngless/
