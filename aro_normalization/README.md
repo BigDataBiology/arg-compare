@@ -194,7 +194,7 @@ hamronize abricate abricate_output --analysis_software_version abricate_software
 
 ### Assembly mode
 #### Result file
-- [resfinder.assembly.aro.tsv](https://github.com/BigDataBiology/arg-compare/blob/676af9a0886234608b6c6ecd0c35da53d777ed3e/aro_normalization/resfinder.assembly.aro.tsv)
+- [resfinder.assembly.aro.tsv](https://github.com/BigDataBiology/arg-compare/blob/master/aro_normalization/resfinder.assembly.aro.tsv)
 - Column specification
 *'sample'* column is the GMGC sample accession.
 #### Run ResFinder command
