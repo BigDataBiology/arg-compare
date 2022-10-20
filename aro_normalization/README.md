@@ -59,7 +59,7 @@ hamronize rgi --input_file_name run_rgi_input --analysis_software_version rgi_so
 
 ### Protein mode
 #### Result file
-- [deeparg.protein.hmr.aro.tsv.xz](https://github.com/BigDataBiology/arg-compare/blob/676af9a0886234608b6c6ecd0c35da53d777ed3e/aro_normalization/deeparg.protein.hmr.aro.tsv.xz)
+- [deeparg.protein.hmr.aro.tsv.xz](https://github.com/BigDataBiology/arg-compare/blob/master/aro_normalization/deeparg.protein.hmr.aro.tsv.xz)
 - Column specification
 *'input_sequence_id'* column is the GMGC unigene accession.
 #### Run DeepARG command
@@ -73,7 +73,7 @@ hamronize deeparg --input_file_name deeparg_input --analysis_software_version de
 
 ### Assembly mode
 #### Result file
-- [deeparg.assembly.aro.tsv.xz](https://github.com/BigDataBiology/arg-compare/blob/676af9a0886234608b6c6ecd0c35da53d777ed3e/aro_normalization/deeparg.assembly.aro.tsv.xz)
+- [deeparg.assembly.aro.tsv.xz](https://github.com/BigDataBiology/arg-compare/blob/master/aro_normalization/deeparg.assembly.aro.tsv.xz)
 - Column specification
 *'read_id'* column is the accession of **reads**(???or contigs?) in GMGC sample.
 
@@ -102,7 +102,7 @@ deeparg short_reads_pipeline --forward_pe_file fq_1 --reverse_pe_file fq_2 --out
 
 ### Protein mode
 #### Result file
-- [argsoap.protein.hmr.aro.tsv.xz](https://github.com/BigDataBiology/arg-compare/blob/676af9a0886234608b6c6ecd0c35da53d777ed3e/aro_normalization/argsoap.protein.hmr.aro.tsv.xz)
+- [argsoap.protein.hmr.aro.tsv.xz](https://github.com/BigDataBiology/arg-compare/blob/master/aro_normalization/argsoap.protein.hmr.aro.tsv.xz)
 - Column specification
 *'input_sequence_id'* column is the GMGC unigene accession.
 #### Run ARGs-OAP command(directly searching SARGFam database)
@@ -133,7 +133,7 @@ hamronize abricate abricate_output --analysis_software_version abricate_software
 
 #### ResFinder database
 ##### Result file
-- [abricate.resfinder.hmr.aro.tsv](https://github.com/BigDataBiology/arg-compare/blob/676af9a0886234608b6c6ecd0c35da53d777ed3e/aro_normalization/abricate.resfinder.hmr.aro.tsv)
+- [abricate.resfinder.hmr.aro.tsv](https://github.com/BigDataBiology/arg-compare/blob/master/aro_normalization/abricate.resfinder.hmr.aro.tsv)
 - Column specification
 *'input_sequence_id'* column is the GMGC unigene accession.
 ##### Run ABRicate command
@@ -147,7 +147,7 @@ hamronize abricate abricate_output --analysis_software_version abricate_software
 
 #### ARG-ANNOT database
 ##### Result file
-- [abricate.argannot.hmr.aro.tsv](https://github.com/BigDataBiology/arg-compare/blob/676af9a0886234608b6c6ecd0c35da53d777ed3e/aro_normalization/abricate.argannot.hmr.aro.tsv)
+- [abricate.argannot.hmr.aro.tsv](https://github.com/BigDataBiology/arg-compare/blob/master/aro_normalization/abricate.argannot.hmr.aro.tsv)
 - Column specification
 *'input_sequence_id'* column is the GMGC unigene accession.
 ##### Run ABRicate command
@@ -161,7 +161,7 @@ hamronize abricate abricate_output --analysis_software_version abricate_software
 
 #### NCBI database
 ##### Result file
-- [abricate.ncbi.hmr.aro.tsv](https://github.com/BigDataBiology/arg-compare/blob/676af9a0886234608b6c6ecd0c35da53d777ed3e/aro_normalization/abricate.ncbi.hmr.aro.tsv)
+- [abricate.ncbi.hmr.aro.tsv](https://github.com/BigDataBiology/arg-compare/blob/master/aro_normalization/abricate.ncbi.hmr.aro.tsv)
 - Column specification
 *'input_sequence_id'* column is the GMGC unigene accession.
 ##### Run ABRicate command
@@ -175,7 +175,7 @@ hamronize abricate abricate_output --analysis_software_version abricate_software
 
 #### MEGARes database
 ##### Result file
-- [abricate.megares.hmr.aro.tsv](https://github.com/BigDataBiology/arg-compare/blob/676af9a0886234608b6c6ecd0c35da53d777ed3e/aro_normalization/abricate.megares.hmr.aro.tsv)
+- [abricate.megares.hmr.aro.tsv](https://github.com/BigDataBiology/arg-compare/blob/master/aro_normalization/abricate.megares.hmr.aro.tsv)
 - Column specification
 *'input_sequence_id'* column is the GMGC unigene accession.
 ##### Run ABRicate command
@@ -208,7 +208,7 @@ python ../resfinder/run_resfinder.py --acquired --inputfasta fafile -o odir
 [AMRFinderPlus](https://github.com/ncbi/amr) and the accompanying database are designed to find acquired antimicrobial resistance genes and some point mutations in protein or assembled nucleotide sequences. We have also added "plus" stress, head, and biocide resistance as well as some virulence factors and E. coli antigens.
 ### Protein mode
 #### Result file
-- [amrfinderplus.protein.aro.tsv](https://github.com/BigDataBiology/arg-compare/blob/676af9a0886234608b6c6ecd0c35da53d777ed3e/aro_normalization/amrfinderplus.protein.aro.tsv)
+- [amrfinderplus.protein.aro.tsv](https://github.com/BigDataBiology/arg-compare/blob/master/aro_normalization/amrfinderplus.protein.aro.tsv)
 - Column specification
 *'Protein identifier'* column is the GMGC unigene accession.
 #### Run AMRFinderPlus command
