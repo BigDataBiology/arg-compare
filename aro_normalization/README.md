@@ -15,8 +15,8 @@ The results are generated from different tools,different input modes of tools an
   - Assembly mode: input file is contig .fna file.
   - Read mode: input file is read .fq file.
 - Different database:
-  Some tools have their own specific databases,such as ARGs-OAP has SARGdb.
-  Some tools can annotate from different databases,such as ABRicate can annotate from CARD,ResFinder,ARG-ANNOT,MEGARes and NCBI database.
+  Some tools have their own specific databases, such as ARGs-OAP has SARGdb.
+  Some tools can annotate from different databases,such as ABRicate can annotate from CARD, ResFinder, ResFinderFG, ARG-ANNOT, MEGARes and NCBI database.
 
 # File Summary
 - RGI.card.hamronized.tsv.xz: RGI/protein mode/CARD
@@ -26,6 +26,7 @@ The results are generated from different tools,different input modes of tools an
 - argsoap.protein.hmr.aro.tsv.xz: ARGs-OAP/protein mode/SARGdb
 - abricate.card.tsv.xz: Abricate/protein mode/CARD
 - abricate.resfinder.hmr.aro.tsv: Abricate/protein mode/Resfinder
+- abricate.resfinderfg.hmr.aro.tsv.zip: Abricate/protein mode/ResfinderFG
 - abricate.argannot.hmr.aro.tsv: Abricate/protein mode/ARG-ANNOT
 - abricate.ncbi.hmr.aro.tsv: Abricate/protein mode/NCBI
 - abricate.megares.hmr.aro.tsv: Abricate/protein mode/MEGARes
@@ -114,7 +115,7 @@ hmmscan --cut_ga --tblout args_oap_hmm_result.tsv Sargfam.hmm GMGC10.wastewater.
 
 
 ## ABRicate
-[ABRicate](https://github.com/tseemann/abricate) is Mass screening of contigs for antimicrobial resistance or virulence genes. It comes bundled with multiple databases: NCBI, CARD, ARG-ANNOT, Resfinder, MEGARES, EcOH, PlasmidFinder, Ecoli_VF and VFDB.
+[ABRicate](https://github.com/tseemann/abricate) is Mass screening of contigs for antimicrobial resistance or virulence genes. It comes bundled with multiple databases: NCBI, CARD, ARG-ANNOT, Resfinder, ResfinderFG, MEGARES, EcOH, PlasmidFinder, Ecoli_VF and VFDB.
 
 ### Protein mode
 #### CARD database
@@ -139,6 +140,20 @@ hamronize abricate abricate_output --analysis_software_version abricate_software
 ##### Run ABRicate command
 ```
 abricate --db resfinder fna
+```
+##### Hamronize command
+```
+hamronize abricate abricate_output --analysis_software_version abricate_software_version --reference_database_version abricate_db_version
+```
+
+#### ResFinderFG database
+##### Result file
+- [abricate.resfinderfg.hmr.aro.tsv.zip](https://github.com/BigDataBiology/arg-compare/blob/master/aro_normalization/abricate.resfinderfg.hmr.aro.tsv.zip)
+- Column specification
+*'input_sequence_id'* column is the GMGC unigene accession.
+##### Run ABRicate command
+```
+abricate --db resfinderfg fna
 ```
 ##### Hamronize command
 ```
