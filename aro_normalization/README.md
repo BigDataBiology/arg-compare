@@ -121,8 +121,10 @@ hmmscan --cut_ga --tblout args_oap_hmm_result.tsv Sargfam.hmm GMGC10.wastewater.
 #### CARD database
 ##### Result file
 - [abricate.card.tsv.xz](https://github.com/BigDataBiology/arg-compare/blob/master/computed/abricate.card.tsv.xz)
+- abricate_card_aro.zip with ARO column
 - Column specification
 *'input_sequence_id'* column is the GMGC unigene accession.
+
 ##### Run ABRicate command
 ```
 abricate --db card fna
