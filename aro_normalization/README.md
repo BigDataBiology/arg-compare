@@ -4,13 +4,14 @@
 - Annotate ARGs on [GMGC](https://gmgc.embl.de/download.cgi) using [RGI](https://github.com/arpcard/rgi#running-rgi-main-with-protein-sequences),[DeepARG](https://bench.cs.vt.edu/deeparg),[ARGs-OAP](https://smile.hku.hk/SARGs),[ABRicate](https://github.com/tseemann/abricate),[ResFinder](https://bitbucket.org/genomicepidemiology/resfinder/src/master/) and [AMRFinderPlus](https://github.com/ncbi/amr).
 - Normalize different outputs by [hAMRonization](https://github.com/pha4ge/hAMRonization).
 - Annotate ARO number by [argNorm](https://github.com/BigDataBiology/argNorm).
+- Add drug categories using [argNorm](https://github.com/BigDataBiology/argNorm).
 
 **Some special instructions：**
-The results are generated from different tools,different input modes of tools and different database.
+The results are generated from different tools, different input modes of tools and different database.
 - Different tools contain:
 [RGI](https://github.com/arpcard/rgi#running-rgi-main-with-protein-sequences),[DeepARG](https://bench.cs.vt.edu/deeparg),[ARGs-OAP](https://smile.hku.hk/SARGs),[ABRicate](https://github.com/tseemann/abricate),[ResFinder](https://bitbucket.org/genomicepidemiology/resfinder/src/master/) and [AMRFinderPlus](https://github.com/ncbi/amr)
 - Different modes:
-  Some tools can support different input file.However,different input mode can probably generate different results. 
+  Some tools can support different input file.However,different input mode can probably generate different results.
   - Protein mode: input file is protein .faa file.
   - Assembly mode: input file is contig .fna file.
   - Read mode: input file is read .fq file.
